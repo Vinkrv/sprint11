@@ -4,6 +4,7 @@ import {CardList} from './classes/CardList.js';
 import {FormValidator} from './classes/FormValidator.js';
 import {Popup} from './classes/Popup.js';
 import {UserInfo} from './classes/UserInfo.js';
+import './pages/index.css';
 
 (function(){const placesList = document.querySelector('.places-list');
 const buttonAdd = document.querySelector('.user-info__button');
@@ -24,8 +25,9 @@ const errorMessages = {
   tooShort: 'Должно быть от 2 до 30 символов',
   typeMismatch: 'Здесь должна быть ссылка'
 };
+const API_URL = NODE_ENV === 'production' ? 'https://praktikum.tk' : 'http://praktikum.tk';
 const config ={
-  url: 'https://praktikum.tk/cohort11',
+  url: `${API_URL}/cohort11`,
   headers: {
     authorization: 'f70a6be0-271c-4f60-bd8e-23050a89a937',
     'Content-Type': 'application/json'
