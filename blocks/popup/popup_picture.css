@@ -1,0 +1,10 @@
+.popup__content_picture {
+    all: initial;
+    position: relative;
+}
+
+.popup__image {
+  
+    max-width: 80vw;
+    max-height: 80vh;
+};
