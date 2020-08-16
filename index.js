@@ -25,7 +25,7 @@ const errorMessages = {
   typeMismatch: 'Здесь должна быть ссылка'
 };
 const config ={
-  url: 'https://praktikum.tk/cohort11',
+  url: 'https://nomoreparties.co/cohort11',
   headers: {
     authorization: 'f70a6be0-271c-4f60-bd8e-23050a89a937',
     'Content-Type': 'application/json'
